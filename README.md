@@ -25,7 +25,7 @@ Adicionar na .env as seguintes variaveis:
 DATABASE_NAME=<database>
 DATABASE_USER=<username>
 DATABASE_PASS=<password>
-DATABASE_HOST=<host_or_ip
+DATABASE_HOST=<host_or_ip>
 DATABASE_PORT=<port>
 
 # Realizar migrações
@@ -41,8 +41,8 @@ StatusFatura.objects.create(status_id=2, descricao="Fatura aberta")
 StatusFatura.objects.create(status_id=3, descricao="Fatura vencida")
 from banco_api.models import TipoTransacao
 TipoTransacao.objects.create(codigo_tipo=1, descricao="Debito")
-TipoTransacao.objects.create(codigo_tipo=2, descricao="Deposito")
-TipoTransacao.objects.create(codigo_tipo=3, descricao="Credito")
+TipoTransacao.objects.create(codigo_tipo=3, descricao="Deposito")
+TipoTransacao.objects.create(codigo_tipo=2, descricao="Credito")
 TipoTransacao.objects.create(codigo_tipo=4, descricao="Pagamento da Fatura")
 from django_q.models import Schedule
 Schedule.objects.create(func="banco_api.schedules.faturas", minutes=1, repeats=-1, schedule_type="I")
