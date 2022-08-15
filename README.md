@@ -1,6 +1,5 @@
-# Desafio Tecnico
+# Sistema que simula uma conta bancaria com transação de Debito e Credito
 
-Sistema que simula uma conta bancaria com transação de Debito e Credito
 Sistema de debito funcionando por Deposito e Compra no Debito
 Sistema de credito funcionando com base na fatura, fatura que vence a cada 20 minutos controlada por um task schedule, com bloqueio do limite e limite de credito. E pagamento da fatura realizado a partir do Saldo da conta.
 
